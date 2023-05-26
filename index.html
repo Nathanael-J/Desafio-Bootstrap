@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .card{
+            margin-bottom: 24px;
+        }
+        .corte{
+            height: 300px;
+            width:100%;
+            object-fit: cover;
+            object-position: 10%;
+        }
+        .corte2{
+            height: 300px;
+            width:100%;
+            object-fit: cover;
+            object-position: 50%;
+        }
+        .corte3{
+            height: 300px;
+            width:100%;
+            object-fit: cover;
+            object-position: 90%;
+        }
+        .foto{
+            position: relative;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            margin-top: -230px;
+            margin-bottom: 44px;
+            border: 4px solid whitesmoke;
+        }
+        .altura{
+            height: 420px;
+            object-fit:cover;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 class="row d-flex justify-content-center py-5">Desafio Módulo 13</h1>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="altura d-block mx-auto w-100" src="./images/html.webp" />
+                    <div class="carousel-caption">
+                        <h2>HTML</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="altura d-block mx-auto w-100" src="./images/css.webp" />
+                    <div class="carousel-caption">
+                        <h2>CSS</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="altura d-block mx-auto w-100" src="./images/js.jpg" />
+                    <div class="carousel-caption">
+                        <h2>JS</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="altura d-block mx-auto w-100" src="./images/frontend_6f5f5d3947.png" />
+                    <div class="carousel-caption">
+                        <h2>FRONT-END</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators pb-2">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="./images/fundo.png" class="py-1 corte">
+                    <img src="./images/Bootstrap.jpg" class="foto mx-auto">
+                    <div class="card-body">
+                        <div class="card-title h4">
+                            Card 01
+                        </div>
+                        <div class="card-text">
+                            Lorem ipsum, dolor sit amet consect
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="./images/fundo.png" class="py-1 corte2">
+                    <img src="./images/Bootstrap.jpg" class="foto mx-auto">
+                    <div class="card-body">
+                        <div class="card-title h4">
+                            Card 02
+                        </div>
+                        <div class="card-text">
+                            Lorem ipsum, dolor sit amet consect
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="./images/fundo.png" class="py-1 corte3">
+                    <img src="./images/Bootstrap.jpg" class="foto mx-auto">
+                    <div class="card-body">
+                        <div class="card-title h4">
+                            Card 03
+                        </div>
+                        <div class="card-text">
+                            Lorem ipsum, dolor sit amet consect
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </div>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
